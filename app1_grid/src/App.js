@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import  PortfolioView from './views/PortfolioView';
+import Zoom from 'react-reveal/Zoom';
 import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
@@ -164,9 +165,12 @@ function App() {
           <PortfolioView/>
           // <Game/>
           ) : (
-            <ul>
-          {listItems}
-        </ul>
+            <Zoom>
+  <p>Markup that will be revealed on scroll</p>
+</Zoom>
+        //     <ul>
+        //   {listItems}
+        // </ul>
         )}
 
 
