@@ -2,6 +2,7 @@
 import './App.css';
 import PortfolioView from './views/PortfolioView';
 import OverView from './views/OverView';
+import WordGame1 from './views/WordGame1';
 import Zoom from 'react-reveal/Zoom';
 import { useState } from 'react';
 
@@ -33,13 +34,15 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: 'black',minHeight: '100vh'}}>
       <header className="App-header">
-      Hi
+      aWordaGame
       </header>
       <main style={{backgroundColor: '#161e2e', color:'skyblue'}}>
         
         {count%2===0 ? (
           // <PortfolioView/>
-          <OverView/>
+          // <OverView/>
+          // <hr></hr>
+          <WordGame1/>
           // <Game/>
           ) : (
             <Zoom>
