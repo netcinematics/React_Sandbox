@@ -34,16 +34,18 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: 'black',minHeight: '100vh'}}>
       <header className="App-header">
-      aWordaGame
+      aWordaGami
       </header>
-      <main style={{backgroundColor: '#161e2e', color:'skyblue'}}>
-        
+      <main style={{backgroundColor: 'rgb(22 35 62)', color:'skyblue',color:'skyblue',paddingTop:'1.5em',
+      borderRadius:'18px',margin:'1em'}}>
         {count%2===0 ? (
-          // <PortfolioView/>
-          // <OverView/>
-          // <hr></hr>
+          <>
+          {/* <Game/> */}
+          <PortfolioView/>
+          <OverView/>
+           <hr></hr>
           <WordGame1/>
-          // <Game/>
+          </>
           ) : (
             <Zoom>
               <p>Markup that will be revealed on scroll</p>
